@@ -12,6 +12,6 @@ The repo contains:
 * this readme.
 * as well as all the original repo files (the *figure* folder and *README.md*)
 
-The code in the R scripts is designed to be fully portable, but it should be run in a sequence. *plot1.R* generates the hh_cons_small.rds file downloading the data to a parallel folder *data* and subsetting it in code.
+The code in the R scripts is designed to be fully portable, but plot1.R should be run before all the others. The first part of the script *plot1.R* downloads the assignment data to a parallel folder *data*, and selects only the data from the relevant dates (1/2/2007, and 2/2/2007), saving it in a separate .rds object, the hh_cons_small.rds file in the repository main directory.
 
 The *data* folder containing the raw, full dataset is not a part of the GitHub repository, due to its size.
